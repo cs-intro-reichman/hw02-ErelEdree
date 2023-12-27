@@ -14,11 +14,10 @@ public class Reverse {
 		}
 		//// Put your code here
 		System.out.println(reversed);
-
 		if (original.length() % 2 == 0) {
-			System.out.println("The middle character is " + original.charAt((original.length() / 2)));
+			System.out.println("The middle character is " + reversed.charAt((original.length() / 2) - 1));
 		} else {
-			System.out.println("The middle character is " + original.charAt(((original.length() - 1) / 2)));
+			System.out.println("The middle character is " + reversed.charAt(((original.length() - 1) / 2)));
 		}
 	}
 }

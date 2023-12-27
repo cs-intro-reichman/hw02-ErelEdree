@@ -10,7 +10,7 @@ public class DamkaBoard {
 				System.out.print(" ");
 			}
 			for (int i = 0; i < n; i++) {
-				System.out.print("*");
+				System.out.print("* ");
 			}
 			System.out.print("\n");
 			row_index += 1;
