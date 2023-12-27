@@ -4,17 +4,26 @@
 public class DamkaBoard {
 	public static void main(String[] args) {
 		int n = Integer.parseInt(args[0]);
-		int row_index = 0;
+		int row_index = 1;
+		String row = "";
 		do {
-			if (row_index % 2 != 0) {
+			// even rows
+			if (row_index % 2 == 0) {
 				System.out.print(" ");
+				for (int i = 0; i < n; i++) {
+					row += "* ";
+				}
+				row = row.substring(0, n * 2 - 1);
+				// odd rows
+			} else {
+				for (int i = 0; i < n; i++) {
+					row += "* ";
+				}
 			}
-			for (int i = 0; i < n; i++) {
-				System.out.print("* ");
-			}
-			System.out.print("\n");
+			System.out.print(row + "\n");
+			row = "";
 			row_index += 1;
-		} while (row_index < n); //// Put your code here
+		} while (row_index <= n); //// Put your code here
 		System.out.print("\n");
 	}
 }
