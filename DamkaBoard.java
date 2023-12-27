@@ -15,5 +15,6 @@ public class DamkaBoard {
 			System.out.print("\n");
 			row_index += 1;
 		} while (row_index < n); //// Put your code here
+		System.out.print("\n");
 	}
 }
