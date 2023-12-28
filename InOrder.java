@@ -6,15 +6,15 @@ public class InOrder {
 	public static void main(String[] args) {
 		//// Write your code here
 		int rand_num = (int) (Math.random() * 10); // going from 0-9
-		int max_num = rand_num; // initialising my maximum as the first random
+		int minimum = rand_num; // initialising my minimum as the first random
 		do {
 			System.out.print(rand_num + " "); // print out first random
 			rand_num = (int) (Math.random() * 10); // generate a new random
-			if (rand_num < max_num) { // if the random number is less than the max, make it the new max
+			if (rand_num > minimum) { // if the random number is less than the max, make it the new max
 				// i.e. if my first random is 9, and my new is 5, make 5 the new max.
-				max_num = rand_num;
+				minimum = rand_num;
 			}
-		} while (rand_num <= max_num); // loop while my random number is less than my max num. i.e. if I get 4 and max
+		} while (rand_num >= minimum); // loop while my random number is less than my max num. i.e. if I get 4 and max
 										// is 5, end loop.
 
 	}
