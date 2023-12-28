@@ -50,8 +50,7 @@ public class OneOfEachStats1 {
 		System.out.println("Number of families with 2 children: " + two_children);
 		System.out.println("Number of families with 3 children: " + three_children);
 		System.out.println("Number of families with 4 or more children: " + four_children);
-		int largest_group = Math.max(Math.max(two_children, three_children),
-				Math.max(three_children, four_children));
+		int largest_group = Math.max(Math.max(two_children, three_children), four_children);
 		if (largest_group == two_children) {
 			System.out.println("The most common number of children is 2");
 		} else if (largest_group == three_children) {
