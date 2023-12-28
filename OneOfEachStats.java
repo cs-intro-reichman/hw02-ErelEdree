@@ -48,9 +48,6 @@ public class OneOfEachStats {
 				case 3:
 					three_children += 1;
 					break;
-				case 4:
-					four_children += 1;
-					break;
 				default:
 					four_children += 1;
 					break;
