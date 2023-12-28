@@ -59,18 +59,18 @@ public class OneOfEachStats {
 			trial_index += 1;
 		}
 		double average_kids = (double) sum_children / num_trials;
-		System.out.println("Average: " + average_kids + " children to get at least one of each gender");
+		System.out.println("Average: " + average_kids + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + two_children);
 		System.out.println("Number of families with 3 children: " + three_children);
 		System.out.println("Number of families with 4 or more children: " + four_children);
 		int largest_group = Math.max(Math.max(two_children, three_children),
 				Math.max(three_children, four_children));
 		if (largest_group == two_children) {
-			System.out.println("The most common number of children is 2");
+			System.out.println("The most common number of children is 2.");
 		} else if (largest_group == three_children) {
-			System.out.println("The most common number of children is 3");
+			System.out.println("The most common number of children is 3.");
 		} else {
-			System.out.println("The most common number of children is 4");
+			System.out.println("The most common number of children is 4.");
 		}
 
 		//// In the previous version of this program, you used a statement like:
